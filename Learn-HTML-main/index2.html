@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+    <style>
+        h2 {
+            color: red;
+        }
+        
+        .city {
+            background-color: rgb(138, 165, 16);
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            font-size: large;
+        }
+        
+        .note {
+            font-size: 110%;
+            color: blue;
+            text-align: center;
+        }
+        
+        #myHeader {
+            background-color: rgb(81, 179, 179);
+            color: rgb(59, 66, 56);
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("vali");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Coffe</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="I" start="50">
+        <li>Milk</li>
+        <li>Tea</li>
+
+        <h2>List to dar to </h2>
+        <p>in list hast</p>
+        <ol type="A">
+            <li>Coffe</li>
+            <ol type="a">
+                <li>hot</li>
+            </ol>
+        </ol>
+        <h2>Not ordered List</h2>
+        <ul>
+            <li>mono</li>
+            <li>tono</li>
+        </ul>
+        <h2>List Tozihi</h2>
+        <dl>
+            <dt>Coffe</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white drink</dd>
+        </dl>
+        <div style="border: 1px solid black;padding: 2px;font-family: 'Times New Roman', Times, serif;">Hello World</div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quas est rerum itaque atque fuga, consequuntur.</p>
+        <span>Hi World</span>
+        <p>This is element span <span style="border: 1px solid black;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Hi span</span> element span</p>
+        <div style="background-color: black; color: white; padding: 20px;">
+            <h2>Londen</h2>
+            <p style="font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam pariatur ad explicabo quae quo, dolor obcaecati officia fuga nam quam consequatur nulla quibusdam odit, beatae nobis quis quas consectetur dolorem.</p>
+            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel sequi similique placeat, eum minima, aut nihil ratione, dicta illo officia suscipit dignissimos. Illo, ipsam modi impedit nulla est eius et?</p>
+        </div>
+        <h2>The span element</h2>
+        <p> My dad has <span style="color: violet; font-weight: bold;">violet</span> eyes and mother <span style="color: brown; font-weight: bold;">brown</span> eyes.</p>
+        <div class="city">
+            <h2>london</h2>
+            <p>is a England.</p>
+        </div>
+        <div class="city">
+            <h2>France</h2>
+            <p>is a Franch</p>
+        </div>
+        <h1>My <span class="note">Important</span> Heading</h1>
+        <p>This is <span class="note">important</span> text.</p>
+
+        <h2>The class Attribute</h2>
+        <p>use CSS to Style name "city"</p>
+
+        <h1 class="city">London</h1>
+        <p>Londen is a big <span class="city">country.</span></p>
+        <br>
+
+        <h2>Multiple Classses</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum autem cumque quos nemo magni aut eaque, deserunt nihil dolore, harum facere debitis iste illo doloribus totam! Eius ducimus vitae consequatur?</p>
+        <h3 class="city note">LONDEN</h3>
+        <h3 class="city">Paris</h3>
+
+        <h2>Use of The class Attribute in JavaScript</h2>
+        <p>Click the button to hide all elements with class name "vali":</p>
+
+        <button onclick="myFunction()">Hide elements</button>
+
+        <h2 class="vali">London</h2>
+        <p>London is the capital of England.</p>
+
+        <h2 class="vali">Paris</h2>
+        <p>Paris is the capital of France.</p>
+
+        <h2 class="vali">Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+        <p style="border: 10px solid rgb(128, 0, 122);"></p>
+
+        <h2>The id Attribute</h2>
+        <p>use the style with "myHeader":</p>
+
+        <h1 id="myHeader">My Header</h1>
+</body>
+
+</html>
